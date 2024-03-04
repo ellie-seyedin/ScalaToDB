@@ -1,11 +1,13 @@
-import org.apache.spark.sql.{SparkSession, SaveMode}
+package jenkins
+
+import org.apache.spark.sql.{SaveMode, SparkSession}
 
 object HiveDataLoader {
   def main(args: Array[String]): Unit = {
     // Create Spark Session with Hive enabled
     val spark = SparkSession.builder()
       .master("local[*]")
-      .appName("SparkByExamples.com")
+      .appName("HiveDataLoader")
       .enableHiveSupport()
       .getOrCreate()
 

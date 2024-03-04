@@ -1,5 +1,7 @@
-import java.sql.{Connection, DriverManager, ResultSet}
+package jenkins
 
+
+import java.sql.DriverManager
 
 object ConnectionToDB {
   def main(args: Array[String]): Unit = {
